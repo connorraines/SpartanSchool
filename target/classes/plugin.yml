@@ -1,0 +1,14 @@
+name: Spartans
+version: '1.0-SNAPSHOT'
+main: me.connorraines.spartans.Spartans
+api-version: 1.16
+commands:
+  start:
+    description: you know
+    usage: /<command>
+  fixBug:
+    usage: /<command>
+  buy:
+    usage: /<command> {Gapple|Arrow|Snowball}
+  balance:
+    usage: /<command>
