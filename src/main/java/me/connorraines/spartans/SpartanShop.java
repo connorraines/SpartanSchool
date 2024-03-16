@@ -1,5 +1,6 @@
 package me.connorraines.spartans;
 
+import me.connorraines.spartans.shop.Buyable;
 import me.connorraines.spartans.shop.ShopItem;
 import me.connorraines.spartans.shop.item.Arrow;
 import me.connorraines.spartans.shop.item.Gapple;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 
 public class SpartanShop {
 
-    private static HashMap<String, ShopItem> itemMap;
+    private static HashMap<String, Buyable> itemMap;
     static {
         itemMap = new HashMap<>();
         itemMap.put("arrow", new Arrow());
@@ -25,7 +26,7 @@ public class SpartanShop {
             error.append("Not a valid amount");
         }
         int playerPoints = Database.getInstance().get(player).points;
-        ShopItem item = itemMap.get(itemName.toLowerCase());
+        Buyable item = itemMap.get(itemName.toLowerCase());
         if(item == null){
             error.append("Item is not a option");
             return false;

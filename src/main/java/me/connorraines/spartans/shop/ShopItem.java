@@ -7,12 +7,11 @@ import org.bukkit.inventory.ItemStack;
 
 
 
-public class ShopItem {
-    public int price;
+public class ShopItem extends Buyable{
     public Material material;
 
     public ShopItem(int price, Material material){
-        this.price = price;
+        super(price);
         this.material = material;
     }
     public void purchase(Player player, int quantity){
