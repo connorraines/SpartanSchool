@@ -2,7 +2,9 @@ package me.connorraines.spartans;
 
 import me.connorraines.spartans.shop.Buyable;
 import me.connorraines.spartans.shop.ShopItem;
+import me.connorraines.spartans.shop.entity.IronGolem;
 import me.connorraines.spartans.shop.item.Arrow;
+import me.connorraines.spartans.shop.item.Egapple;
 import me.connorraines.spartans.shop.item.Gapple;
 import me.connorraines.spartans.shop.item.Snowball;
 import org.bukkit.ChatColor;
@@ -14,12 +16,14 @@ import java.util.HashMap;
 
 public class SpartanShop {
 
-    private static HashMap<String, Buyable> itemMap;
+    public static HashMap<String, Buyable> itemMap;
     static {
         itemMap = new HashMap<>();
         itemMap.put("arrow", new Arrow());
         itemMap.put("snowball", new Snowball());
         itemMap.put("gapple", new Gapple());
+        itemMap.put("irongolem", new IronGolem());
+        itemMap.put("egapple", new Egapple());
     }
     public static boolean purchase(Player player, String itemName, int quantity, StringBuilder error){
         if(quantity <= 0){
