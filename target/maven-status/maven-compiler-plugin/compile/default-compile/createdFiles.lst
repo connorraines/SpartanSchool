@@ -1,5 +1,7 @@
 me/connorraines/spartans/Main.class
 me/connorraines/spartans/SpartanShop.class
+me/connorraines/spartans/shop/Buyable.class
+me/connorraines/spartans/shop/entity/IronGolem.class
 me/connorraines/spartans/shop/ShopItem.class
 me/connorraines/spartans/shop/item/Snowball.class
 me/connorraines/spartans/PlayerData.class
@@ -12,4 +14,6 @@ me/connorraines/spartans/GameLogic.class
 me/connorraines/spartans/GameLogic$2.class
 me/connorraines/spartans/Database.class
 me/connorraines/spartans/GameLogic$1.class
+me/connorraines/spartans/shop/ShopEntity.class
+me/connorraines/spartans/shop/item/Egapple.class
 me/connorraines/spartans/SpartanShopTabCompletion.class
