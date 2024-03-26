@@ -9,11 +9,13 @@ me/connorraines/spartans/GameUtils.class
 me/connorraines/spartans/shop/item/Gapple.class
 me/connorraines/spartans/SpartanEventHandlers.class
 me/connorraines/spartans/SpartanCommandExecutor.class
+me/connorraines/spartans/shop/entity/Snowman.class
 me/connorraines/spartans/shop/item/Arrow.class
 me/connorraines/spartans/GameLogic.class
 me/connorraines/spartans/GameLogic$2.class
 me/connorraines/spartans/Database.class
 me/connorraines/spartans/GameLogic$1.class
+me/connorraines/spartans/shop/entity/FightingWolf.class
 me/connorraines/spartans/shop/ShopEntity.class
 me/connorraines/spartans/shop/item/Egapple.class
 me/connorraines/spartans/SpartanShopTabCompletion.class

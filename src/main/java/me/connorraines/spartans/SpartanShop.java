@@ -2,6 +2,7 @@ package me.connorraines.spartans;
 
 import me.connorraines.spartans.shop.Buyable;
 import me.connorraines.spartans.shop.ShopItem;
+import me.connorraines.spartans.shop.entity.FightingWolf;
 import me.connorraines.spartans.shop.entity.IronGolem;
 import me.connorraines.spartans.shop.entity.Snowman;
 import me.connorraines.spartans.shop.item.Arrow;
@@ -26,6 +27,7 @@ public class SpartanShop {
         itemMap.put("irongolem", new IronGolem());
         itemMap.put("egapple", new Egapple());
         itemMap.put("snowman", new Snowman());
+        itemMap.put("wolf", new FightingWolf());
     }
     public static boolean purchase(Player player, String itemName, int quantity, StringBuilder error){
         if(quantity <= 0){
