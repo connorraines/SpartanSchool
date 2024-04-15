@@ -34,7 +34,7 @@ public class GuiCommand implements CommandExecutor {
 
         ItemStack clearWeatherButton = new ItemStack(Material.SUNFLOWER);
         ItemMeta clearWeatherMeta = clearWeatherButton.getItemMeta();
-        clearWeatherMeta.setDisplayName(ChatColor.RED + "Clear Inventory");
+        clearWeatherMeta.setDisplayName(ChatColor.YELLOW + "Clear Weather");
         clearWeatherButton.setItemMeta(clearWeatherMeta);
 
         inventory.setItem(11, getDiamondButton);
