@@ -5,6 +5,6 @@ import org.bukkit.Material;
 
 public class Gapple extends ShopItem {
     public Gapple(){
-        super(12, Material.GOLDEN_APPLE);
+        super(5, Material.GOLDEN_APPLE);
     }
 }

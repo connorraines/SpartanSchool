@@ -26,7 +26,7 @@ public final class Spartans extends JavaPlugin{
         gameLogic = new GameLogic();
         getServer().getPluginManager().registerEvents(new SpartanEventHandlers(gameLogic), this);
         getServer().getPluginManager().registerEvents(new GuiListener(), this);
-        getServer().getPluginManager().registerEvents(new ShopListener(), this);
+        getServer().getPluginManager().registerEvents(new ShopListener(gameLogic), this);
         getCommand("start").setExecutor(new SpartanCommandExecutor(gameLogic));
         getCommand("fixbug").setExecutor(new SpartanCommandExecutor(gameLogic));
         getCommand("buy").setExecutor(new SpartanCommandExecutor(gameLogic));

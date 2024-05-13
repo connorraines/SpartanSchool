@@ -44,7 +44,7 @@ public class SpartanShop {
             Database.getInstance().changePoints(player, item.price * quantity * -1);
             return true;
         }
-        error.append("You need more money");
+        error.append("You need more ¥");
         return false;
 
     }

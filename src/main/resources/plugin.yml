@@ -13,5 +13,8 @@ commands:
   balance:
     usage: /<command>
   gui:
-    description: open shop gui
+    description: open gui
+    usage: /<command>
+  shop:
+    description: open shop
     usage: /<command>

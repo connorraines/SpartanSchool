@@ -55,7 +55,8 @@ public class GameLogic {
         GameUtils.addAllPlayersToDatabase(database);
     }
     public void spawnWave(){
-        for(int i = 1; i <= waveCount; i++){
+        spawnMobs(1);
+        for(int i = 2; i <= waveCount; i++){
             final int index = i;
             Bukkit.getScheduler().runTaskLater(Spartans.getInstance(), new Runnable() {
                 @Override
@@ -190,6 +191,6 @@ public class GameLogic {
         }
     }
     public void getBalance(Player p){
-        p.sendMessage("you have " + database.get(p).points + " points");
+        p.sendMessage("you have " + database.get(p).points + "¥");
     }
 }

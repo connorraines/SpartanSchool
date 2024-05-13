@@ -32,7 +32,7 @@ public class Database {
 
     public boolean changePoints(Player player, int points){
         PlayerData playerData = this.get(player);
-        Bukkit.broadcastMessage(ChatColor.BOLD + player.getDisplayName() + ChatColor.DARK_AQUA + " has done something to change their points by " + points);
+        Bukkit.broadcastMessage(ChatColor.BOLD + player.getDisplayName() + ChatColor.DARK_AQUA + " has done something to change their ¥ by " + points);
         if (playerData != null && playerData.points + points > -1){
             playerData.points += points;
             return true;

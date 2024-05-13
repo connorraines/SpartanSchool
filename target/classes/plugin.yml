@@ -12,3 +12,9 @@ commands:
     usage: /<command> {Gapple|Arrow|Snowball}
   balance:
     usage: /<command>
+  gui:
+    description: open gui
+    usage: /<command>
+  shop:
+    description: open shop
+    usage: /<command>

@@ -12,7 +12,7 @@ public class GuiListener implements Listener {
     @EventHandler
     public void onClick(InventoryClickEvent event){
         Player player = (Player) event.getWhoClicked();
-        if (player.hasMetadata("OpenedMenu")){
+        if (player.hasMetadata("OpenedMe")){
             event.setCancelled(true);
 
             if(event.getSlot() == 11){
@@ -33,8 +33,8 @@ public class GuiListener implements Listener {
     public void onClose(InventoryCloseEvent event){
         Player player = (Player) event.getPlayer();
 
-        if (player.hasMetadata("OpenedMenu")){
-            player.removeMetadata("OpenedMenu", Spartans.getInstance());
+        if (player.hasMetadata("OpenedMe")){
+            player.removeMetadata("OpenedMe", Spartans.getInstance());
         }
     }
 }

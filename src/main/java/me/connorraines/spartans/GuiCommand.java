@@ -42,7 +42,7 @@ public class GuiCommand implements CommandExecutor {
         inventory.setItem(15, clearWeatherButton);
 
         player.openInventory(inventory);
-        player.setMetadata("OpenedMenu", new FixedMetadataValue(Spartans.getInstance(), inventory));
+        player.setMetadata("OpenedMe", new FixedMetadataValue(Spartans.getInstance(), inventory));
         return false;
 
 
