@@ -85,7 +85,7 @@ public class GameUtils {
         World world= Bukkit.getWorlds().get(0);
         int playersAlive = 0;
         for (Player player: world.getPlayers()){
-            db.create(player, 0);
+            db.create(player, 10000000);
         }
     }
     public static void levelUp(int waveCount, int protection){

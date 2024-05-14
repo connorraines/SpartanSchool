@@ -6,6 +6,6 @@ import org.bukkit.entity.EntityType;
 public class IronGolem extends ShopEntity {
 
     public IronGolem() {
-        super(20, EntityType.IRON_GOLEM);
+        super(10, EntityType.IRON_GOLEM);
     }
 }

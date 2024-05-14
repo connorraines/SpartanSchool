@@ -21,11 +21,28 @@ public class ShopListener implements Listener {
             event.setCancelled(true);
 
             switch (event.getSlot()){
-                case 11:
-                    String[] args = {"gapple"};
-                    gameLogic.handlePurchase(args, player);
+                case 2+(9*1):
+                    gameLogic.handlePurchase(new String[]{"gapple"}, player);
                     break;
-                case 0:
+                case 3+(9*1):
+                    gameLogic.handlePurchase(new String[]{"egapple"}, player);
+                    break;
+                case 4+(9*1):
+                    gameLogic.handlePurchase(new String[]{"arrow"}, player);
+                    break;
+                case 5+(9*1):
+                    gameLogic.handlePurchase(new String[]{"snowball"}, player);
+                    break;
+                case 2+(9*2):
+                    gameLogic.handlePurchase(new String[]{"wolf"}, player);
+                    break;
+                case 3+(9*2):
+                    gameLogic.handlePurchase(new String[]{"snowman"}, player);
+                    break;
+                case 4+(9*2):
+                    gameLogic.handlePurchase(new String[]{"irongolem"}, player);
+                    break;
+                case 8:
                     player.closeInventory();
                     break;
             }
